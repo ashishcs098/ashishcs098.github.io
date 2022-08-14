@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surve-Form</title>
+    <style>
+        h1 {
+            /* font-size: 50px; */
+            text-align: center;
+            /* color:blue; */
+
+        }
+
+        body {
+            background-color: rgb(4, 168, 45);
+        }
+
+        .insidecontainer {
+            font-size: 24px;
+            padding-top: 10px;
+            padding-left: 20px;
+            /* border: 2px solid red; */
+            background-color: rgb(253, 253, 253);
+            width: 450px;
+            height: 700px;
+        }
+
+        .outsidecontainer {
+            padding-top: 20px;
+         /* Padding-left is used for center a div */
+            padding-left: 32%; 
+        }
+
+        .sizeofbox {
+            width: 420px;
+            height: 30px;
+        }
+
+        #submitbutton {
+            background-color: rgb(4, 168, 45);
+        }
+    </style>
+</head>
+
+<body>
+    <h1> GFG SURVEY FORM</h1>
+    <div class="outsidecontainer">
+        <div class="insidecontainer">
+            <form action="action.php">
+                <!-- input for Name,Email and Age -->
+                Name <br>
+                <input type="text" name="username" class="sizeofbox" placeholder="Enter Your Name"> <br>
+                Email <br>
+                <input type="email" name="useremail" class="sizeofbox" placeholder="Enter Your Email"> <br>
+                Age <br>
+                <input type="number" name="userAge" class="sizeofbox" placeholder="Enter Your Age"> <br>
+                <p>Which option Best Description on you
+                </p>
+                <!-- creating drop down  -->
+                <select name="BestDescription-on-you" id="description" class="sizeofbox">
+                    <option value="Student">Student</option>
+                    <option value="ComputerScienceEngineer">ComputerScienceEngineer</option>
+                    <option value="CivilEngineer">CivilEngineer</option>
+                    <option value="MechanicalEngineer">MechanicalEngineer</option>
+                    <option value="BusinessMan">BusinessMan</option>
+                    <option value="None" selected>None</option>
+                </select>
+                <br>
+                <p>Language & Framework Know (chech all that apply)</p>
+                <!-- creating chechbox for what user Know -->
+                <input type="checkbox" name="Language" value="C" ID="firstid">
+                <label for="firstid">C</label><br>
+                <input type="checkbox" name="Language" value="C++" ID="secondid">
+                <label for="secondid">C++</label><br>
+                <input type="checkbox" name="Language" value="C#" ID="Thirdid">
+                <label for="Thirdid">C #</label><br>
+                <input type="checkbox" name="Language" value="HTML" ID="fourthid">
+                <label for="fourthid">HTML</label><br>
+                <input type="checkbox" name="Language" value="CSS" ID="Fifthtid">
+                <label for="Fifthtid">CSS</label><br>
+                <input type="checkbox" name="Language" value="BOOTSTRAP" ID="sixid">
+                <label for="sixid">BOOTSTRAP</label><br>
+                <input type="checkbox" name="Language" value="JAVASCRIPT" ID="eightid">
+                <label for="eightid">JAVASCRIPT</label><br>
+                <input type="checkbox" name="Language" value="REACT" ID="sevenid">
+                <label for="sevenid">REACT</label><br>
+                <!-- Creating submit button -->
+                <div class="submit">
+                    <input type="button" value="submit" class="sizeofbox" id="submitbutton">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
